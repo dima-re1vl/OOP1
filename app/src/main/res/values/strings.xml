@@ -4,4 +4,6 @@
     <string name="field_1">Введіть число 1</string>
     <string name="field_2">Введіть число 2</string>
     <string name="field_3">Введіть число 3</string>
+    <string name="result">Результат</string>
+    <string name="text_for_btn">Розрахувати</string>
 </resources>
