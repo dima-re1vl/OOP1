@@ -1,11 +1,11 @@
 package com.example.oop1
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 
 class SquareActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,12 +17,12 @@ class SquareActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        findViewById<ImageView>(R.id.calculate_btn).setOnClickListener {
-            val number = findViewById<EditText>(R.id.number_1).text.toString().toDoubleOrNull()
+        findViewById<ImageView>(R.id.square_btn).setOnClickListener {
+            val number = findViewById<EditText>(R.id.square_number_1).text.toString().toDoubleOrNull()
 
             if (number != null) {
                 val squareArea = number * number
-                findViewById<TextView>(R.id.result_text).text = "$squareArea"
+                findViewById<TextView>(R.id.result_text).text = "S = $squareArea"
             } else {
                 findViewById<TextView>(R.id.result_text).text = "Не число :("
             }

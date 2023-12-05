@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">OOP1</string>
     <string name="main_text">Оберіть фігуру</string>
-    <string name="field_1">Введіть число 1</string>
-    <string name="field_2">Введіть число 2</string>
-    <string name="field_3">Введіть число 3</string>
+    <string name="field_1">Введіть сторону 1</string>
+    <string name="field_2">Введіть сторону 2</string>
+    <string name="field_3">Введіть радіус</string>
     <string name="result">Результат</string>
     <string name="text_for_btn">Розрахувати</string>
 </resources>

@@ -7,6 +7,22 @@
     android:background="@color/main"
     tools:context=".CircleActivity">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="@color/additionally"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/field_3"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/circle_number_1"
+        app:layout_constraintEnd_toStartOf="@+id/circle_number_1"
+        app:layout_constraintTop_toTopOf="@+id/circle_number_1" />
+
     <ImageView
         android:id="@+id/back_img"
         android:layout_width="40dp"
@@ -34,5 +50,27 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/circle_number_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="230dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/circle_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circle_number_1"
+        app:srcCompat="@drawable/btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
