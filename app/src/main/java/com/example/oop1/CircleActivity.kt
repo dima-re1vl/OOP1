@@ -23,7 +23,7 @@ class CircleActivity : AppCompatActivity() {
 
             if (number != null) {
                 val df = DecimalFormat("#.#####")
-                val circleArea = number * Math.pow(Math.PI, 2.0)
+                val circleArea = Math.PI * Math.pow(number, 2.0)
                 findViewById<TextView>(R.id.result_text).text = "S = ${df.format(circleArea)}"
             } else {
                 findViewById<TextView>(R.id.result_text).text = "Не число :("
